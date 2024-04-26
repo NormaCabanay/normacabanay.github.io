@@ -53,8 +53,8 @@ body{
 	box-sizing: border-box;
 	padding: 6px,8px;
 	border: none;
-	box-shadow: rgb(45, 45, 45);
-	background-color:rgba(122, 122, 102, 0.995);
+	box-shadow: rgb(20, 20, 19);
+	background-color:rgba(81, 81, 71, 0.995);
 	border-radius: 8px;
 	
 }
