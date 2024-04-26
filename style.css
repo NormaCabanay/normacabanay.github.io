@@ -48,3 +48,34 @@ body{
    
    display: flex;
  }
+ input{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 6px,8px;
+	border: none;
+	box-shadow: rgb(45, 45, 45);
+	background-color:rgba(122, 122, 102, 0.995);
+	border-radius: 8px;
+	
+}
+.form{
+	background-color:transparent;
+	padding: 10px,20px;
+	max-width: 500px;
+	margin: auto;
+	box-shadow:rgb(45, 45, 45);
+	margin-top: 50px;
+	border-radius: 8px;
+	font-size: 20px;
+	margin-bottom: 40px;
+}
+fieldset{
+	padding: 0 6px 20px 6px ;
+	margin: 20px 0;
+	border: 1px solid  rgb(214, 186, 62);
+	border-radius: 5px;
+}
+legend{
+	padding: 0 6px;
+	color: rgb(214, 186, 62);
+}
