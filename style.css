@@ -5,7 +5,7 @@ body{
      margin: 0 20px ;
      color:rgb(245, 246, 249);
      font-size: 3em;
-     font-family:  georgia;
+     font-family: georgia;
      text-align: left;
      background-color: rgb(88, 150, 205);
  }
@@ -19,6 +19,15 @@ body{
      background-color: rgb(1, 29, 54);
  }
  h3{
+    margin: 20px;
+     color:rgb(214, 186, 62);
+     font-size: 2em;
+     font-family: georgia;
+     text-align: left;
+     background-color: rgb(45, 45, 45); 
+ 
+ }
+ h4{
      margin: 20px;
      color:rgb(214, 186, 62);
      
@@ -54,7 +63,7 @@ body{
 	padding: 6px,8px;
 	border: none;
 	box-shadow: rgb(20, 20, 19);
-	background-color:rgba(81, 81, 71, 0.995);
+	background-color:rgba(81, 81, 71);
 	border-radius: 8px;
 	
 }
@@ -78,4 +87,9 @@ fieldset{
 legend{
 	padding: 0 6px;
 	color: rgb(214, 186, 62);
+}
+select{
+	background-color:rgba(81, 81, 71, 0.995) ;
+	margin: 20px;
+	
 }
