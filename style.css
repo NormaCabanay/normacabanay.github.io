@@ -1,22 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    margin: 0 20px ;
+    color:rgb(5, 166, 241);
+    background-color: rgb(50, 50, 49);
+    font-size: 1em;
+     font-family: georgia;
+}
 body{
     background-color: rgb(50, 50, 49);
   }
   h1{
-     margin: 0 20px ;
      color:rgb(245, 246, 249);
      font-size: 3em;
      font-family: georgia;
      text-align: left;
-     background-color: rgb(88, 150, 205);
+     background-color: rgb(126, 248, 253);
  }
- 
+ a{
+    margin: 0 20px ;
+    color:rgb(214, 186, 62);
+ }
  h2{
-     margin: 0 20px ;
+   
      color:rgb(245, 246, 249);
      font-size: 3em;
      font-family:  georgia;
      text-align: left;
-     background-color: rgb(1, 29, 54);
+     background-color: rgb(6, 69, 125);
  }
  h3{
     margin: 20px;
@@ -44,18 +57,26 @@ body{
      background-color: rgb(45, 45, 45);  
  }
  ul{
-     color:rgb(214, 186, 62) ;
- }
+    color:rgb(214, 186, 62) ;
+}
  img {
      margin: 20px;
      border-style: none;
      max-width: 20%;
      border-radius: 10px;
+     
+   }
+   .Contactos{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
    }
  
  .contePrincipal{
-   
-   display: flex;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
  }
  input{
 	width: 100%;
