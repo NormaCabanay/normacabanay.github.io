@@ -10,6 +10,12 @@
 			<li><a href="index.html">Inicio</a></li>
 			<li><a href="Servicios.html">Servicios</a></li>
 		</ul>
+    <!--
+      Formulario de contacto
+Al menos 3 campos. Alguno debe ser distinto a texto. Combinar validaciones de campos obligatorios, longitud máxima y uso de expresiones regulares.
+Los datos enviados deben ser validados vía javascript (no basta con HTML5) y en caso de estar bien, se debe agregar html a la página mostrando los datos enviados (usando createElement).
+En caso de haber errores, deben ser mostrados manipulando el HTML (no usar alertas nativas).
+    -->
 	</nav>
   </head>
 <body>
@@ -19,47 +25,53 @@
     
 
     <h4>Llene el formulario por Favor...</h4>
-
-    <div class="form">
-    <form action="">
-      <fieldset>
+    <form class="frm" onsubmit="return validar()">
+    
+      <div class="formula">
+     <fieldset>
       <legend>Sus Datos</legend>
-        <input type="text" name="name" placeholder="Nombre"><br><br>
-        <input type="text" name="lastName" placeholder="Apellido"><br><br>
-        <input type="text" name="address"placeholder="Dirección"><br><br>
-        <input type="email"name="email" placeholder="email"><br><br>
-        <input type="tel"name="phone" placeholder="Telefono"><br><br>
+        <label>Nombre*</label>
+        <input id="nombre"placeholder=" Jua..."><br><br>
+        <label>Apellido*</label>
+        <input id="apellido"placeholder=" Per..." ><br><br>
+        <label>dirección</label>
+        <input id="dirección"placeholder=" Abc 123..."><br><br>
+        <label>Correo*</label>
+        <input id="correo"placeholder=" ...@...ar"><br><br>
+        <label>Telefono</label>
+        <input type="tel"name="phone" placeholder=" 01233"><br><br>
         <input type="date"name=date placeholder="Fecha"style="color: rgb(214, 186, 62)"; ><br><br>
         </fieldset>
       </div>
       <h4>¿Que servicios nesecita? </h4>
-      <div class="form">
+      <div class="formula">
         <fieldset>
           <legend>Presupuesto</legend>
             <select id="servicios" name="serv">
-            <option value="proyeIndu"> Líneas Eléctricas (Baja y Media Tensión)</option>  
-            <option value="proyeComercio"> Sub-Estaciones Transformadoras</option> 
-            <option value="proyeDom">Iluminación – Alumbrado Público</option>
-            <option value="areglo">Tendido de Fibra Óptica</option>
-            <option value="tableros">Armado y diseño de tableros eléctricos</option>
-            <option value="Cableado">Programación PLCs</option>
-           
+            <option value="0"> Selecionar</option> 
+            <option value="1"> Líneas Eléctricas (Baja y Media Tensión)</option>  
+            <option value="2"> Sub-Estaciones Transformadoras</option> 
+            <option value="3">Iluminación – Alumbrado Público</option>
+            <option value="4">Tendido de Fibra Óptica</option>
+            <option value="5">Armado y diseño de tableros eléctricos</option>
+            <option value="6">Programación PLCs</option>
             </select>
           </fieldset>
         </div>
         <h4>Tu sugerencias nos interesa</h4>
-        <div class="form">
+        <div class="formula" >
           <fieldset>
               <legend>Sugerencias</legend>
            
-            <textarea name="message" style= "background-color:rgba(81, 81, 71); width:300px; height:50px; color: rgb(214, 186, 62)">
+            <textarea id="message" style= "background-color:rgba(81, 81, 71); width:300px; height:50px; color: rgb(214, 186, 62)">
                 Escriba acá...
-                </textarea>
-        <input type="submit"style="color:  rgb(214, 186, 62)">
+                </textarea><br>
+        <button type="submit"class="envia">Enviar</button>
+      </div>
         </fieldset>
       </form>
-        </div> 
-    
+      <ul id="listaErrores">
+        <ol id="listaMensajes"></ol>
    <h4>Nos podes contactar a</h4> 
 
         <div class="Contactos">
@@ -67,6 +79,6 @@
         <a href="">Instagram</a>
         <a href="">Whatsapp</a>
       </div>
-    
+    <script src="viel.js"></script>
 </body>
 </html>
