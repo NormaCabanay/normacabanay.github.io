@@ -84,7 +84,7 @@ if(nomb.length == 0){ // condicional para validar nombre, nuestra el error y agr
         }
  if(errores.length == 0){ // si no hay errores 
           let li =document.createElement("li");// crea el elemento
-       if(message.value.length > 0 ){ // se muetra mensaje si escribio algo en las sugerencias 
+       if(message.value.length ==0 ){ // se muetra mensaje si escribio algo en las sugerencias 
           li.innerHTML=`Hola ${nomb}, rebisaremos tu comentario nos estaremos comunicando al ${correo.value} lo antes posible`;
     }else{ // si no,se muetra que eligio un servicio 
           li.innerHTML=`Hola ${nomb}, gracias por requerir nuestros servisios, nos estaremos comunicando al ${correo.value} lo antes posible`;
