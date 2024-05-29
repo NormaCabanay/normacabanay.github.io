@@ -32,7 +32,7 @@ body{
      background-color: rgb(6, 69, 125);
  }
  h3{
-    margin: 20px;
+     margin: 20px;
      color:rgb(214, 186, 62);
      font-size: 2em;
      font-family: georgia;
@@ -52,7 +52,6 @@ body{
  p{
      margin: 20px;
      color:rgb(225, 224, 219);
-     
      font-family:  georgia;
      text-align: left;
      background-color: rgb(50, 50, 49);  
@@ -70,15 +69,23 @@ body{
  
  .contePrincipal{
     margin: 20px;
+    
+ }
+ .contSecundario{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+ }
+ .contColu{
+    padding: 10px;
+    margin: 10px;
+    width: 30%S;
  }
  input{
     font-family: georgia;
 	width: 100%;
 	box-sizing: border-box;
 	padding: 8px,10px;
-	border: none;
 	box-shadow: rgb(20, 20, 19);
 	background-color:rgba(81, 81, 71);
 	border-radius: 5px;
@@ -112,12 +119,25 @@ select{
 	
 }
 .envia{
+    margin: 20px;
     font-family:  georgia;
     color: rgb(214, 186, 62) ;
     background-color: rgba(81, 81, 71, 0.995);
-    font-size: 15px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+#listaMensajes{
+    margin: 20px;
+    font-family:  georgia;
+    color: beige;
+}
+#listaErrores{
+    margin: 20px;
+    font-family:  georgia;
+    color: rgb(253, 8, 8);
 }
 .error {
+    background-color: rgb(225, 112, 112);
     border: 3px solid red;
    }
 
