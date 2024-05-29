@@ -30,7 +30,7 @@ let nomb = nombre.value.trim(); //saca los espacios en blancos de campo
 let apell = apellido.value.trim();
 let corre = correo.value.trim();
 let regCorreo = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{3})+$/; //validacion exprecion regula para el correo
-let regTel = /^[1-9]\d{11}$/; //validacion exprecion regula para el telefono
+let regTel = /^[1-9]\d{9}$/; //validacion exprecion regula para el telefono
 
 if(nomb.length == 0){ // condicional para validar nombre, nuestra el error y agrega un error a la lista
     errores.push("No ingreso nombre");
@@ -85,9 +85,9 @@ if(nomb.length == 0){ // condicional para validar nombre, nuestra el error y agr
  if(errores.length == 0){ // si no hay errores 
           let li =document.createElement("li");// crea el elemento
        if(message.value.length > 0 ){ // se muetra mensaje si escribio algo en las sugerencias 
-          lis.innerHTML=`Hola ${nomb}, rebisaremos tu comentario nos estaremos comunicando al ${correo.value} lo antes posible`;
+          li.innerHTML=`Hola ${nomb}, rebisaremos tu comentario nos estaremos comunicando al ${correo.value} lo antes posible`;
     }else{ // si no,se muetra que eligio un servicio 
-          lis.innerHTML=`Hola ${nomb}, gracias por requerir nuestros servisios, nos estaremos comunicando al ${correo.value} lo antes posible`;
+          li.innerHTML=`Hola ${nomb}, gracias por requerir nuestros servisios, nos estaremos comunicando al ${correo.value} lo antes posible`;
             
         }
         listaMensajes.appendChild(li);
@@ -96,10 +96,7 @@ if(nomb.length == 0){ // condicional para validar nombre, nuestra el error y agr
     }else{
       return false;
     }
-    
-
-
-}
+   }
 function limpiar(){
     let listaMensajes = document.getElementById("listaMensajes")
     listaMensajes = "";
@@ -110,7 +107,7 @@ function limpiar(){
 //********************************************* 
  //**************armado de carrusel*************
 
-/* let imagenes =['vielFoto.png','torrealtaTension.png','hombre-tecnico-electrico.png','pileta.png','obra.png'];
+ let imagenes =['vielFoto.png','torrealtaTension.png','hombre-tecnico-electrico.png','pileta.png','obra.png'];
 let cont = 0;
 function carrusel(contenedor){
     contenedor.addEventListener(`click`,e =>{
@@ -145,7 +142,7 @@ function carrusel(contenedor){
 document.addEventListener("DOMContentLoaded",()=>{
     let contenedor = document.querySelector('.contenedor')
     carrusel(contenedor);
-});*/
+});
 
 
 
