@@ -13,7 +13,6 @@ let message = document.getElementById("message");
 let listaErrores = document.getElementById("listaErrores");
 let listaMensajes = document.getElementById("listaMensajes");
 
-limpiar();
 
 function validar(){
 //limpiamos los errores
@@ -71,7 +70,7 @@ if(nomb.length == 0){ // condicional para validar nombre, nuestra el error y agr
          tel.classList.add("error");
     }
      //valida el selec
- if(servicios == 0 || servicios == ""){
+ if(servicios.value == 0 || servicios.value == ""){
          errores.push("No selecciono un servicio");
          servicios.classList.add("error");
     }
@@ -84,7 +83,7 @@ if(nomb.length == 0){ // condicional para validar nombre, nuestra el error y agr
         }
  if(errores.length == 0){ // si no hay errores 
           let li =document.createElement("li");// crea el elemento
-       if(message.value.length ==0 ){ // se muetra mensaje si escribio algo en las sugerencias 
+       if(message.value.length >0 ){ // se muetra mensaje si escribio algo en las sugerencias 
           li.innerHTML=`Hola ${nomb}, rebisaremos tu comentario nos estaremos comunicando al ${correo.value} lo antes posible`;
     }else{ // si no,se muetra que eligio un servicio 
           li.innerHTML=`Hola ${nomb}, gracias por requerir nuestros servisios, nos estaremos comunicando al ${correo.value} lo antes posible`;
@@ -97,10 +96,7 @@ if(nomb.length == 0){ // condicional para validar nombre, nuestra el error y agr
       return false;
     }
    }
-function limpiar(){
-    let listaMensajes = document.getElementById("listaMensajes")
-    listaMensajes = "";
-}
+
 
 
 
