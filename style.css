@@ -78,13 +78,18 @@ body{
 }
 .columnas{
     width: 20%;
+    height: 400px;
     display: flex;
     text-align: center;
     margin: 10px;
     border-radius: 4px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     flex-direction: column;
-     overflow: hidden;
+     overflow: auto;
+     scroll-behavior: smooth;
+     scrollbar-width: none;
+     
+     
   }
   
 .columnas img{
@@ -178,6 +183,7 @@ img{
     height: 100%;
 }
 .contenedor{
+    margin:  20px;
     width: 100%;
     position: relative;
     height: 600px;
