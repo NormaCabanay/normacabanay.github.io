@@ -70,14 +70,8 @@ body{
     color:rgb(214, 186, 62) ;
 }
 .contColumnas{  
-    
-    width: 100%;  
-    flex-direction: column;                                     
-    justify-content: center; 
-    column-gap: 50px ;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+   display: flex;
+   flex-wrap: wrap;
 }
 .columnas{
     width: 30%;
