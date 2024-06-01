@@ -95,7 +95,7 @@ if(nomb.length == 0){ // condicional para validar nombre, nuestra el error y agr
     }else{
       return false;
     }
-   }
+ 
 
 
 
@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     carrusel(contenedor);
 });
 
-
+}
 
 
 
