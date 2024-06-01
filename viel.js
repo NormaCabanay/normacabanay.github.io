@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     carrusel(contenedor);
 });
 
-}
+
 
 
 
